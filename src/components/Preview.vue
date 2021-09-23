@@ -1,6 +1,4 @@
 <template>
-    <div style="background-color: rgb(236, 239, 255); padding: 10px; font-weight: bold;">提醒：观看有问题请联系（微信号：fulibar-net）</div>
-  
   <div class="preview">
     <!-- 无法预览，显示下载与直链 -->
     <a-result :title="file.name" v-if="previewShow.other">
@@ -52,7 +50,7 @@
     <!-- 音频预览 -->
     <div class="audio-preview" v-show="previewShow.audio" id="audio-preview"></div>
     <a href="https://wx.fulibar.net/2193" target="_blank" data-v-06143a74=""><img src="https://tva4.sinaimg.cn/large/006N1FsLly1gu3v03biyqj31kl0ih40u.jpg" data-v-06143a74="" style="width: 100%;"></a>
-    <div style="background-color: rgb(236, 239, 255); padding: 10px; font-weight: bold;">提醒：观看有问题请联系（微信号：fulibar-net）</div>
+    <div style="background-color: rgb(24, 144, 255); padding: 10px; font-weight: bold;">提醒：观看有问题请联系（微信号：fulibar-net）</div>
   </div>
 </template>
 
