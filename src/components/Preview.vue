@@ -1,4 +1,6 @@
 <template>
+    <div style="background-color: rgb(236, 239, 255); padding: 10px; font-weight: bold;">提醒：观看有问题请联系（微信号：fulibar-net）</div>
+  </div>
   <div class="preview">
     <!-- 无法预览，显示下载与直链 -->
     <a-result :title="file.name" v-if="previewShow.other">
