@@ -21,6 +21,7 @@ interface InfoProps {
   check_update?: string;
   script?: string;
   autoplay?: boolean;
+  sort?: string;
   preview?: {
     url: string;
     pre_process: string[];
@@ -76,7 +77,7 @@ export default createStore<GlobalDataProps>({
       code: 200,
     },
     data: [],
-    type: 'folder',
+    type: 'loading',
     audios: [],
     drive: '',
     isImages: false,
@@ -154,6 +155,7 @@ export default createStore<GlobalDataProps>({
     },
     async fetchPathOrSearch({state, commit}, {path, query}){
       commit('setLoading', true)
+      state.type = 'loading'
       if(query){
         const {data} = await searchPost(query, path)
         if(data.code !== 200){
